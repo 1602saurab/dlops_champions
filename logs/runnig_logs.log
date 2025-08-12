@@ -57,3 +57,185 @@ Source-Age: 42
 [2025-08-06 17:38:37,616: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<
 
 x==========x]
+[2025-08-11 17:39:52,898: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-11 17:39:52,939: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-11 17:39:52,942: INFO: common: created directory at: artifacts]
+[2025-08-11 17:39:52,946: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-08-11 17:39:54,376: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-11 17:39:55,077: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-12 17:54:21,631: INFO: main: >>>>>> Data Ingestion Stage started <<<<<<]
+[2025-08-12 17:54:21,647: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 17:54:21,651: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 17:54:21,652: INFO: common: created directory at: artifacts]
+[2025-08-12 17:54:21,652: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-12 17:54:21,653: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2025-08-12 17:54:22,387: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-08-12 17:54:22,387: INFO: main: >>>>>> Prepare Base Model started <<<<]
+[2025-08-12 17:54:22,391: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 17:54:22,395: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 17:54:22,395: INFO: common: created directory at: artifacts]
+[2025-08-12 17:54:22,396: ERROR: main: "'params_base_model'"]
+Traceback (most recent call last):
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\.venv\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'params_base_model'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\main.py", line 25, in <module>
+    prepare_base_model.main()
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 12, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\config\configuration.py", line 33, in get_prepare_base_model_config
+    config = self.config['params_base_model']
+            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\.venv\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'params_base_model'"
+[2025-08-12 17:58:50,625: INFO: main: >>>>>> Data Ingestion Stage started <<<<<<]
+[2025-08-12 17:58:50,627: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 17:58:50,631: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 17:58:50,631: INFO: common: created directory at: artifacts]
+[2025-08-12 17:58:50,631: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-12 17:58:50,632: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2025-08-12 17:58:51,181: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-08-12 17:58:51,182: INFO: main: >>>>>> Prepare Base Model started <<<<]
+[2025-08-12 17:58:51,186: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 17:58:51,189: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 17:58:51,191: INFO: common: created directory at: artifacts]
+[2025-08-12 17:58:51,192: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-08-12 17:58:51,193: ERROR: main: "'IMAZE_SIZE'"]
+Traceback (most recent call last):
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\.venv\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'IMAZE_SIZE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\main.py", line 25, in <module>
+    prepare_base_model.main()
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 12, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\config\configuration.py", line 41, in get_prepare_base_model_config
+    params_image_size=params['IMAZE_SIZE'],
+                      ~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\.venv\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'IMAZE_SIZE'"
+[2025-08-12 17:59:59,584: INFO: main: >>>>>> Data Ingestion Stage started <<<<<<]
+[2025-08-12 17:59:59,587: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 17:59:59,590: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 17:59:59,590: INFO: common: created directory at: artifacts]
+[2025-08-12 17:59:59,591: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-12 17:59:59,592: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2025-08-12 18:00:00,182: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-08-12 18:00:00,182: INFO: main: >>>>>> Prepare Base Model started <<<<]
+[2025-08-12 18:00:00,186: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 18:00:00,193: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 18:00:00,198: INFO: common: created directory at: artifacts]
+[2025-08-12 18:00:00,198: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-08-12 18:00:00,199: ERROR: main: module 'keras._tf_keras.keras' has no attribute 'application']
+Traceback (most recent call last):
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\main.py", line 25, in <module>
+    prepare_base_model.main()
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 14, in main
+    prepare_base_model.get_base_model()
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\components\prepare_base_model.py", line 13, in get_base_model
+    self.model = tf.keras.application.vgg16.VGG16(
+                 ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'keras._tf_keras.keras' has no attribute 'application'. Did you mean: 'applications'?
+[2025-08-12 18:00:35,289: INFO: main: >>>>>> Data Ingestion Stage started <<<<<<]
+[2025-08-12 18:00:35,292: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 18:00:35,294: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 18:00:35,295: INFO: common: created directory at: artifacts]
+[2025-08-12 18:00:35,295: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-12 18:00:35,296: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2025-08-12 18:00:35,894: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-08-12 18:00:35,894: INFO: main: >>>>>> Prepare Base Model started <<<<]
+[2025-08-12 18:00:35,900: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 18:00:35,904: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 18:00:35,906: INFO: common: created directory at: artifacts]
+[2025-08-12 18:00:35,906: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-08-12 18:00:36,797: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-12 18:00:37,197: ERROR: main: Unrecognized keyword arguments passed to Model: {'input': <KerasTensor shape=(None, 224, 224, 3), dtype=float32, sparse=False, ragged=False, name=keras_tensor>, 'outputs': <KerasTensor shape=(None, 2), dtype=float32, sparse=False, ragged=False, name=keras_tensor_20>}]
+Traceback (most recent call last):
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\main.py", line 25, in <module>
+    prepare_base_model.main()
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model.update_base_model()
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\components\prepare_base_model.py", line 50, in update_base_model
+    self.full_model = self._prepare_full_model(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\components\prepare_base_model.py", line 35, in _prepare_full_model
+    full_model = tf.keras.models.Model(
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\.venv\Lib\site-packages\keras\src\models\model.py", line 158, in __init__
+    Layer.__init__(self, *args, **kwargs)
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\.venv\Lib\site-packages\keras\src\layers\layer.py", line 291, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to Model: {'input': <KerasTensor shape=(None, 224, 224, 3), dtype=float32, sparse=False, ragged=False, name=keras_tensor>, 'outputs': <KerasTensor shape=(None, 2), dtype=float32, sparse=False, ragged=False, name=keras_tensor_20>}
+[2025-08-12 18:05:06,247: INFO: main: >>>>>> Data Ingestion Stage started <<<<<<]
+[2025-08-12 18:05:06,249: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 18:05:06,251: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 18:05:06,251: INFO: common: created directory at: artifacts]
+[2025-08-12 18:05:06,252: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-12 18:05:06,252: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2025-08-12 18:05:06,817: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-08-12 18:05:06,817: INFO: main: >>>>>> Prepare Base Model started <<<<]
+[2025-08-12 18:05:06,821: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 18:05:06,826: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 18:05:06,827: INFO: common: created directory at: artifacts]
+[2025-08-12 18:05:06,828: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-08-12 18:05:07,628: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-12 18:05:08,042: ERROR: main: Unrecognized keyword arguments passed to Model: {'input': <KerasTensor shape=(None, 224, 224, 3), dtype=float32, sparse=False, ragged=False, name=keras_tensor>, 'outputs': <KerasTensor shape=(None, 2), dtype=float32, sparse=False, ragged=False, name=keras_tensor_20>}]
+Traceback (most recent call last):
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\main.py", line 25, in <module>
+    prepare_base_model.main()
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 15, in main
+    prepare_base_model.update_base_model()
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\components\prepare_base_model.py", line 50, in update_base_model
+    self.full_model = self._prepare_full_model(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\src\cnnClassifier\components\prepare_base_model.py", line 35, in _prepare_full_model
+    full_model = tf.keras.models.Model(
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\.venv\Lib\site-packages\keras\src\models\model.py", line 158, in __init__
+    Layer.__init__(self, *args, **kwargs)
+  File "C:\Users\saurabh\Desktop\dl_ops_champios\vinipro\.venv\Lib\site-packages\keras\src\layers\layer.py", line 291, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to Model: {'input': <KerasTensor shape=(None, 224, 224, 3), dtype=float32, sparse=False, ragged=False, name=keras_tensor>, 'outputs': <KerasTensor shape=(None, 2), dtype=float32, sparse=False, ragged=False, name=keras_tensor_20>}
+[2025-08-12 18:12:18,315: INFO: main: >>>>>> Data Ingestion Stage started <<<<<<]
+[2025-08-12 18:12:18,316: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 18:12:18,316: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 18:12:18,316: INFO: common: created directory at: artifacts]
+[2025-08-12 18:12:18,316: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-08-12 18:12:18,320: INFO: data_ingestion: File already exists of size: ~ 11345 KB]
+[2025-08-12 18:12:18,650: INFO: main: >>>>>> Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-08-12 18:12:18,650: INFO: main: >>>>>> Prepare Base Model started <<<<]
+[2025-08-12 18:12:18,650: INFO: common: YAML file config\config.yaml loaded successfully]
+[2025-08-12 18:12:18,650: INFO: common: YAML file params.yaml loaded successfully]
+[2025-08-12 18:12:18,650: INFO: common: created directory at: artifacts]
+[2025-08-12 18:12:18,650: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-08-12 18:12:19,112: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-12 18:12:19,321: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-08-12 18:12:19,518: INFO: main: >>>>>>> Prepare Base Model completed <<<<<
+
+x=======x]
