@@ -425,3 +425,19 @@ x==========x]
 [2025-08-23 09:42:11,609: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2025-08-26 15:53:35,119: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.41:8080]
+[2025-08-26 15:53:35,124: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-08-26 15:53:51,541: INFO: _internal: 127.0.0.1 - - [26/Aug/2025 15:53:51] "GET / HTTP/1.1" 200 -]
+[2025-08-26 15:53:52,995: INFO: _internal: 127.0.0.1 - - [26/Aug/2025 15:53:52] "GET / HTTP/1.1" 200 -]
+[2025-08-26 15:54:00,196: INFO: _internal: 127.0.0.1 - - [26/Aug/2025 15:54:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-08-26 15:55:11,000: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.41:8080]
+[2025-08-26 15:55:11,002: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-08-26 15:55:14,865: INFO: _internal: 127.0.0.1 - - [26/Aug/2025 15:55:14] "GET / HTTP/1.1" 200 -]
+[2025-08-26 15:55:54,937: INFO: _internal: 127.0.0.1 - - [26/Aug/2025 15:55:54] "GET / HTTP/1.1" 200 -]
+[2025-08-26 15:56:11,032: INFO: _internal: 127.0.0.1 - - [26/Aug/2025 15:56:11] "GET / HTTP/1.1" 200 -]
